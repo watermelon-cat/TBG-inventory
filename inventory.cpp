@@ -3,6 +3,7 @@ using namespace std;
 
 //global variable: seen and used by ALL functions
 string inventory[10];
+int turns = 0;
 
 int main() {
 	//local variables
@@ -16,6 +17,8 @@ int main() {
 		for (int i = 0; i < 10; i++)
 			cout << inventory[i] << " | ";
 		cout << endl;
+		turns++;
+		cout << "you have " << 20 - turns << " left" << endl;
 
 		switch (room) {
 		case 1:
